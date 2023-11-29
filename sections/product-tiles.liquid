@@ -1,4 +1,5 @@
 {{ 'section-product-tiles.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
 
 <div class="product-tiles__wrapper">
   {%- if section.settings.title != blank -%}
@@ -7,11 +8,28 @@
   {%- if section.settings.description != blank -%}
     <p class="product-tiles__description">{{ section.settings.description }}</p>
   {%- endif -%}
+  <div class="product-tiles__tiles-wrapper">
+    {%- for block in section.blocks -%}
+      <div class="product-tiles__card">
+        {% render 'card-product',
+          card_product: block.settings.product,
+          media_aspect_ratio: 'adapt',
+          show_secondary_image: block.settings.second_image,
+          extend_height: true
+        %}
+      </div>
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
 {
-  "name": "Zsófi Produkt-Kacheln",
+  "name": "Product tiles",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "settings": [
     {
       "id": "title",
@@ -26,10 +44,34 @@
       "default": "<p>Add your text here</p>"
     }
   ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
   "presets": [
     {
       "name": "Zsófi Produkt-Kacheln",
-      "category": "Custom"
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
     }
   ]
 }

@@ -13,3 +13,13 @@
     width: 60%;
     text-align: center;
 }
+
+.product-tiles__tiles-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-tiles__card {
+    width: 30rem;
+
+}

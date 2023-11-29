@@ -3,21 +3,35 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem;
+    text-align: center;
 }
 
 .product-tiles__title {
     font-size: 3.5rem;
+    margin: 1rem 0;
 }
 
 .product-tiles__wrapper p {
-    width: 60%;
     text-align: center;
 }
 
+@media screen and (min-width: 750px) {
+    .product-tiles__wrapper p {
+        width: 60%;
+    }
+  }
+
 .product-tiles__tiles-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
+
+@media screen and (min-width: 750px) {
+    .product-tiles__tiles-wrapper {
+      flex-direction: row;
+    }
+  }
 
 .product-tiles__card {
     width: 30rem;

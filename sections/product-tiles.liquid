@@ -1,0 +1,36 @@
+{{ 'section-product-tiles.css' | asset_url | stylesheet_tag }}
+
+<div class="product-tiles__wrapper">
+  {%- if section.settings.title != blank -%}
+    <h2 class="product-tiles__title">{{ section.settings.title }}</h2>
+  {%- endif -%}
+  {%- if section.settings.description != blank -%}
+    <p class="product-tiles__description">{{ section.settings.description }}</p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Zsófi Produkt-Kacheln",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "id": "description",
+      "type": "richtext",
+      "label": "Description",
+      "default": "<p>Add your text here</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Zsófi Produkt-Kacheln",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1613,6 +1613,12 @@ a.product__text {
   font-size: 1.8rem;
 }
 
+@media screen and (min-width: 1600px) {
+  .product__customizer-textarea {
+    width: 90%;
+  }
+}
+
 .product__customizer-textarea:focus {
   outline: none;
   box-shadow: none;

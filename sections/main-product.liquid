@@ -434,9 +434,9 @@
                 block: block
               %}
             {%- when 'product-customizer' -%}
-              <div class="product-customizer">
-                <label for="custom-text">Text</label><br>
-                <input id="custom-text" type="text" name="properties[Text]">
+              <div class="product__customizer">
+                <label for="custom-text">Custom text:</label>
+                <textarea id="text-area field__input" name="properties[Custom text]"form="product-form-{{ section.id }}" class="product__customizer-textarea"></textarea>
               </div>
           {%- endcase -%}
         {%- endfor -%}

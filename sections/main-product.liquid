@@ -433,6 +433,11 @@
               {% render 'icon-with-text',
                 block: block
               %}
+            {%- when 'product-customizer' -%}
+              <div class="product-customizer">
+                <label for="custom-text">Text</label><br>
+                <input id="custom-text" type="text" name="properties[Text]">
+              </div>
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -580,6 +585,10 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "product-customizer",
+      "name": "Individualisierung"
     },
     {
       "type": "text",

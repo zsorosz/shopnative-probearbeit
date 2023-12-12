@@ -155,12 +155,45 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "aa4a6567-a5b9-4976-b1f6-68c7622b697f": {
+      "type": "product-tiles",
+      "blocks": {
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "the-collection-snowboard-hydrogen"
+          }
+        },
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "the-collection-snowboard-liquid"
+          }
+        },
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-3": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-1",
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-2",
+        "template--17025938030847__aa4a6567-a5b9-4976-b1f6-68c7622b697f-product-3"
+      ],
+      "settings": {
+        "title": "Title",
+        "description": "<p>Add your text here<\/p>"
+      }
     }
   },
   "order": [
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
     "featured_collection",
     "f1552b18-6017-4231-810d-74e61da22c37",
-    "38cdf60f-e431-43b5-aac3-7e6215447d67"
+    "38cdf60f-e431-43b5-aac3-7e6215447d67",
+    "aa4a6567-a5b9-4976-b1f6-68c7622b697f"
   ]
 }

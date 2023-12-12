@@ -93,10 +93,44 @@
         "padding_top": 48,
         "padding_bottom": 28
       }
+    },
+    "ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb": {
+      "type": "product-tiles",
+      "blocks": {
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "the-compare-at-price-snowboard"
+          }
+        },
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "the-collection-snowboard-hydrogen"
+          }
+        },
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-3": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-1",
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-2",
+        "template--17025938555135__ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb-product-3"
+      ],
+      "settings": {
+        "title": "Title",
+        "description": "<p>Add your text here<\/p>"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "ae05f7a8-0a2e-4e8f-8dd1-c0a8e6187ccb"
   ]
 }

@@ -50,6 +50,11 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "81da4cbf-947d-47e0-af6a-3b226dfdaa55": {
+          "type": "product-customizer",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -60,7 +65,8 @@
         "price",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "81da4cbf-947d-47e0-af6a-3b226dfdaa55"
       ],
       "settings": {
         "enable_sticky_info": true,
